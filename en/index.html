@@ -8,8 +8,8 @@
   <meta property="og:title" content="FirLauncher — an open-source Minecraft launcher">
   <meta property="og:description" content="Modded instances, one-click mods from Modrinth and CurseForge. Free, no ads, all the code on GitHub.">
   <meta property="og:image" content="../assets/en/instances.webp">
-  <meta name="theme-color" content="#e4e4e6" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#e4e4e6" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://firlauncher.github.io/en/">
   <link rel="alternate" hreflang="ru" href="https://firlauncher.github.io/">
@@ -17,7 +17,7 @@
   <link rel="alternate" hreflang="x-default" href="https://firlauncher.github.io/en/">
   
   
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -44,48 +44,33 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="../style.css?v=3">
+  <link rel="stylesheet" href="../style.css?v=4">
 </head>
 <body>
   <a class="skip" href="#download">Skip to downloads</a>
 
   <header class="top">
-    <nav class="pill pill-main" aria-label="Sections">
-      <a class="brand" href="./" aria-label="FirLauncher home">FirLauncher</a>
-      <span class="nav-links"><a href="#features">Features</a><a href="#open-source">Code</a><a href="#download">Download</a></span>
+    <a class="brand" href="./" aria-label="FirLauncher home">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6"/><path d="M12 3.6 15.6 8.4H13.6l3.2 4H14.4l3.6 4.8H13v2.6h-2v-2.6H6l3.6-4.8H7.2l3.2-4H8.4Z"/></svg>
+      FirLauncher
+    </a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#open-source">Code</a>
+      <a href="#download">Download</a>
+      <a class="top-gh" href="https://github.com/perdeyvariant-hue/FirLauncher">GitHub</a>
+      <span class="lang" role="group" aria-label="Language">
+        <a href="../" hreflang="ru" lang="ru">RU</a>
+        <a aria-current="page" lang="en">EN</a>
+      </span>
     </nav>
-    <div class="pill pill-side">
-      <span class="lang" role="group" aria-label="Language"><a href="../" hreflang="ru" lang="ru">RU</a><a aria-current="page" lang="en">EN</a></span>
-      <a class="nav-gh" href="https://github.com/perdeyvariant-hue/FirLauncher">GitHub</a>
-      <a class="nav-cta" href="#download">Download</a>
-    </div>
   </header>
 
   <main>
     <section class="hero">
-      <p class="hero-word" aria-hidden="true">FirLauncher</p>
-      <div class="chrome" aria-hidden="true"></div>
-      <div class="stage" aria-hidden="true">
-        <div class="stage-bar">
-          <span class="stage-play"><i></i></span>
-          <span class="stage-run">Play</span>
-          <span class="stage-sep"></span>
-          <span>Vanilla <b>1.21.4</b></span>
-          <span class="stage-dim">Fabric</span>
-          <span class="stage-sep"></span>
-          <span class="stage-dim">Mods <b>128</b></span>
-        </div>
-        <div class="ruler"><div class="ruler-sel"></div><div class="ruler-head"></div><span>1.16</span><span>1.18</span><span>1.19</span><span>1.20</span><span>1.21</span><span>1.21.4</span></div>
-        <div class="tiles">
-          <span class="tile t-fabric"><b>F</b></span>
-          <span class="tile t-quilt"><b>Q</b></span>
-          <span class="tile t-shot" style="background-image:url(../assets/en/instances.webp)"></span>
-          <span class="tile t-neo"><b>N</b></span>
-          <span class="tile t-fir"><svg viewBox="0 0 24 24"><path d="M12 3.6 15.6 8.4H13.6l3.2 4H14.4l3.6 4.8H13v2.6h-2v-2.6H6l3.6-4.8H7.2l3.2-4H8.4Z"/></svg></span>
-        </div>
-      </div>
       <div class="hero-text">
-        <h1>An open-source Minecraft launcher</h1>
+        <p class="eyebrow-pill"><span class="dot"></span>Free · Open source · No ads</p>
+        <h1><span class="grad">An open-source</span> Minecraft launcher</h1>
         <p class="lede">Modded instances on Fabric, Forge, NeoForge and Quilt, mods from Modrinth and CurseForge in one click. Free, no ads, every line of code on GitHub.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" id="hero-download" href="#download">Download</a>
@@ -98,8 +83,13 @@
       </figure>
     </section>
 
+    <section class="stats" aria-label="At a glance">
+      <dl><div><dt>4</dt><dd>loaders: Fabric, Quilt, Forge, NeoForge</dd></div><div><dt>2</dt><dd>mod catalogues: Modrinth and CurseForge</dd></div><div><dt>3</dt><dd>systems: Windows, macOS, Linux</dd></div><div><dt>0</dt><dd>ads and tracking</dd></div></dl>
+    </section>
+
     <section class="open" id="open-source">
       <div class="open-text">
+        <p class="eyebrow">Open source</p>
         <h2>All of the code is open</h2>
         <p>MIT licence: read it, build it, change it, share it. The launcher collects no statistics and shows no ads — the source code says so, not just a promise.</p>
         <p>Rust and Tauri underneath, a React interface on top. Found a bug or want to add something? Open an <a href="https://github.com/perdeyvariant-hue/FirLauncher/issues">issue</a> or send a pull request.</p>
@@ -115,9 +105,11 @@ npm run tauri dev</code></pre>
     </section>
 
     <section class="features" id="features">
+      <p class="eyebrow">Features</p>
       <h2>What it does</h2>
 
       <div class="group">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.8 20 7v10l-8 4.2L4 17V7z"/><path d="M4 7l8 4.2L20 7M12 11.2v10"/></svg></span>
         <h3>Instances</h3>
         <dl>
           <div><dt>Every instance on its own</dt><dd>Its own mods, worlds and settings — nothing leaks between versions.</dd></div>
@@ -128,6 +120,7 @@ npm run tauri dev</code></pre>
       </div>
 
       <div class="group">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 4.5a2 2 0 1 1 4 0V6h4a1 1 0 0 1 1 1v4h-1.5a2 2 0 1 0 0 4H18v4a1 1 0 0 1-1 1h-4v-1.5a2 2 0 1 0-4 0V20H5a1 1 0 0 1-1-1v-4h1.5a2 2 0 1 0 0-4H4V7a1 1 0 0 1 1-1h4z"/></svg></span>
         <h3>Mods</h3>
         <dl>
           <div><dt>Modrinth and CurseForge</dt><dd>Search with filters, one-click install, dependencies come along by themselves.</dd></div>
@@ -137,6 +130,7 @@ npm run tauri dev</code></pre>
       </div>
 
       <div class="group">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.6"/><path d="m5.6 5.6 3.9 3.9m5 5 3.9 3.9m0-12.8-3.9 3.9m-5 5-3.9 3.9"/></svg></span>
         <h3>When something breaks</h3>
         <dl>
           <div><dt>Crashes explained</dt><dd>The launcher reads the log and tells you the cause in plain words, often with a Fix button.</dd></div>
@@ -146,6 +140,7 @@ npm run tauri dev</code></pre>
       </div>
 
       <div class="group">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.5 7h9a4.5 4.5 0 0 1 4.4 5.5l-.9 4a2.6 2.6 0 0 1-4.5 1.1L14 16h-4l-1.5 1.6A2.6 2.6 0 0 1 4 16.5l-.9-4A4.5 4.5 0 0 1 7.5 7z"/><path d="M8 10v3M6.5 11.5h3"/><circle cx="16" cy="10.8" r=".6"/><circle cx="17.2" cy="12.8" r=".6"/></svg></span>
         <h3>Playing</h3>
         <dl>
           <div><dt>Microsoft and offline accounts</dt><dd>Offline accounts can play online too, on servers that don’t check licences.</dd></div>
@@ -158,20 +153,21 @@ npm run tauri dev</code></pre>
     <section class="gallery" aria-label="Screenshots">
       <figure>
         <img src="../assets/en/launch.webp" width="2560" height="1600" loading="lazy" alt="The launch card with the game's live log">
-        <figcaption>After Play you watch the game come up: preparation progress, then the game’s own log.</figcaption>
+        <figcaption><strong>Launch</strong>After Play you watch the game come up: preparation progress, then the game’s own log.</figcaption>
       </figure>
       <figure>
         <img src="../assets/en/mods.webp" width="2560" height="1600" loading="lazy" alt="An instance's mods with updates available">
-        <figcaption>Mods with their real names and icons; update the ones you pick, or all at once.</figcaption>
+        <figcaption><strong>Mods</strong>Mods with their real names and icons; update the ones you pick, or all at once.</figcaption>
       </figure>
       <figure>
         <img src="../assets/en/appearance.webp" width="2560" height="1600" loading="lazy" alt="Appearance settings: themes, accent colour, wallpaper and mascot">
-        <figcaption>Themes, accent colour, wallpaper and a corner mascot — make it yours.</figcaption>
+        <figcaption><strong>Appearance</strong>Themes, accent colour, wallpaper and a corner mascot — make it yours.</figcaption>
       </figure>
     </section>
 
     <section class="download" id="download">
       <div class="download-head">
+        <p class="eyebrow">For every system</p>
         <h2>Download</h2>
         <p id="release-line">The latest version is on the <a href="https://github.com/perdeyvariant-hue/FirLauncher/releases/latest">releases page</a>.</p>
       </div>
@@ -200,6 +196,7 @@ npm run tauri dev</code></pre>
     </section>
 
     <section class="faq" aria-labelledby="faq-title">
+      <p class="eyebrow">FAQ</p>
       <h2 id="faq-title">Questions</h2>
       <details>
         <summary>Is it really free?</summary>
@@ -221,10 +218,11 @@ npm run tauri dev</code></pre>
   </main>
 
   <footer class="foot">
+    <nav class="foot-links" aria-label="Links"><a href="https://github.com/perdeyvariant-hue/FirLauncher">GitHub</a><a href="https://github.com/perdeyvariant-hue/FirLauncher/releases">Releases</a><a href="https://github.com/perdeyvariant-hue/FirLauncher/issues">Report a bug</a><a href="https://github.com/perdeyvariant-hue/FirLauncher/blob/main/LICENSE">MIT licence</a></nav>
     <p>FirLauncher is an open-source project under the MIT licence. <a href="https://github.com/perdeyvariant-hue/FirLauncher">github.com/perdeyvariant-hue/FirLauncher</a></p>
     <p class="disclaimer">Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
   </footer>
 
-  <script src="../app.js?v=3" defer></script>
+  <script src="../app.js?v=4" defer></script>
 </body>
 </html>

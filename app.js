@@ -180,3 +180,36 @@
       });
     });
 })();
+
+// Sections below the fold fade up as they scroll into view. Without
+// IntersectionObserver, or with reduced motion, everything just shows.
+(function () {
+  'use strict';
+
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        el.classList.add('is-in');
+        // Drop the stagger once in, so hover effects respond at once.
+        el.addEventListener('transitionend', function () {
+          el.style.transitionDelay = '';
+        }, { once: true });
+        observer.unobserve(el);
+      });
+    },
+    { rootMargin: '0px 0px -8% 0px' }
+  );
+
+  document
+    .querySelectorAll('.stats div, .open, .group, .gallery figure, .download-head, .platform, .faq details')
+    .forEach(function (el, i) {
+      if (el.getBoundingClientRect().top < innerHeight) return;
+      el.classList.add('reveal');
+      el.style.transitionDelay = (i % 4) * 60 + 'ms';
+      observer.observe(el);
+    });
+})();
