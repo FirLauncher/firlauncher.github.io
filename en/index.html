@@ -8,8 +8,8 @@
   <meta property="og:title" content="FirLauncher — an open-source Minecraft launcher">
   <meta property="og:description" content="Modded instances, one-click mods from Modrinth and CurseForge. Free, no ads, all the code on GitHub.">
   <meta property="og:image" content="../assets/en/instances.webp">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#e4e4e6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#e4e4e6" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://firlauncher.github.io/en/">
   <link rel="alternate" hreflang="ru" href="https://firlauncher.github.io/">
@@ -17,7 +17,7 @@
   <link rel="alternate" hreflang="x-default" href="https://firlauncher.github.io/en/">
   
   
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
   <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -50,24 +50,40 @@
   <a class="skip" href="#download">Skip to downloads</a>
 
   <header class="top">
-    <a class="brand" href="./" aria-label="FirLauncher home">
-      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6"/><path d="M12 3.6 15.6 8.4H13.6l3.2 4H14.4l3.6 4.8H13v2.6h-2v-2.6H6l3.6-4.8H7.2l3.2-4H8.4Z"/></svg>
-      FirLauncher
-    </a>
-    <nav class="top-nav" aria-label="Sections">
-      <a href="#features">Features</a>
-      <a href="#open-source">Code</a>
-      <a href="#download">Download</a>
-      <a class="top-gh" href="https://github.com/perdeyvariant-hue/FirLauncher">GitHub</a>
-      <span class="lang" role="group" aria-label="Language">
-        <a href="../" hreflang="ru" lang="ru">RU</a>
-        <a aria-current="page" lang="en">EN</a>
-      </span>
+    <nav class="pill pill-main" aria-label="Sections">
+      <a class="brand" href="./" aria-label="FirLauncher home">FirLauncher</a>
+      <span class="nav-links"><a href="#features">Features</a><a href="#open-source">Code</a><a href="#download">Download</a></span>
     </nav>
+    <div class="pill pill-side">
+      <span class="lang" role="group" aria-label="Language"><a href="../" hreflang="ru" lang="ru">RU</a><a aria-current="page" lang="en">EN</a></span>
+      <a class="nav-gh" href="https://github.com/perdeyvariant-hue/FirLauncher">GitHub</a>
+      <a class="nav-cta" href="#download">Download</a>
+    </div>
   </header>
 
   <main>
     <section class="hero">
+      <p class="hero-word" aria-hidden="true">FirLauncher</p>
+      <div class="chrome" aria-hidden="true"></div>
+      <div class="stage" aria-hidden="true">
+        <div class="stage-bar">
+          <span class="stage-play"><i></i></span>
+          <span class="stage-run">Play</span>
+          <span class="stage-sep"></span>
+          <span>Vanilla <b>1.21.4</b></span>
+          <span class="stage-dim">Fabric</span>
+          <span class="stage-sep"></span>
+          <span class="stage-dim">Mods <b>128</b></span>
+        </div>
+        <div class="ruler"><div class="ruler-sel"></div><div class="ruler-head"></div><span>1.16</span><span>1.18</span><span>1.19</span><span>1.20</span><span>1.21</span><span>1.21.4</span></div>
+        <div class="tiles">
+          <span class="tile t-fabric"><b>F</b></span>
+          <span class="tile t-quilt"><b>Q</b></span>
+          <span class="tile t-shot" style="background-image:url(../assets/en/instances.webp)"></span>
+          <span class="tile t-neo"><b>N</b></span>
+          <span class="tile t-fir"><svg viewBox="0 0 24 24"><path d="M12 3.6 15.6 8.4H13.6l3.2 4H14.4l3.6 4.8H13v2.6h-2v-2.6H6l3.6-4.8H7.2l3.2-4H8.4Z"/></svg></span>
+        </div>
+      </div>
       <div class="hero-text">
         <h1>An open-source Minecraft launcher</h1>
         <p class="lede">Modded instances on Fabric, Forge, NeoForge and Quilt, mods from Modrinth and CurseForge in one click. Free, no ads, every line of code on GitHub.</p>
